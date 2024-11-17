@@ -1,0 +1,121 @@
+/* ExpenseList.css */
+
+/* Container for the entire expense list */
+.income-list-container {
+    padding: 30px;
+    background-color:transparent;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for each list item */
+.income-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.income-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 12px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+/* Hover effect for each expense item */
+.income-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Expense details styling */
+.income-details {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.income-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.income-amount, .income-date {
+    color: #666;
+}
+
+/* Styling for the edit and delete buttons */
+.income-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #f0f4f8;
+    transition: background-color 0.2s;
+    font-size: 1.2rem;
+}
+
+/* Edit button color */
+.edit-btn {
+    color: #007bff;
+}
+
+.edit-btn:hover {
+    background-color: #0362c7;
+    color: white;
+}
+
+/* Delete button color */
+.delete-btn {
+    color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #d71424;
+    color: white;
+}
+
+/* Total expense styling */
+.total-income {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .income-list-container {
+        padding: 20px;
+    }
+
+    .income-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .income-actions {
+        margin-top: 10px;
+    }
+}
+
+.income-date
+{
+    padding: 10px;
+}

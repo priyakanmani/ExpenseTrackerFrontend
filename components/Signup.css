@@ -1,0 +1,113 @@
+/* Signup.css */
+
+/* Center the signup container with full viewport height */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/1393379221/photo/financial-family-planning-and-budgeting-the-concept-of-money-management-for-a-little-person.jpg?s=612x612&w=0&k=20&c=vC2zM6hceLmdOnrm8yqZiMFiZYBIz1_Fqa-54gr9_s4='); /* Add your image URL here */
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the background */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Style the signup box with soft shadows and rounded corners */
+.signup-box {
+  background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  padding: 40px;
+  border-radius: 12px; /* Slightly larger rounded corners */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+  z-index: 2; /* Ensure the box is above the background */
+}
+
+.signup-box:hover {
+  transform: scale(1.03); /* Slight scaling effect */
+}
+
+/* Title styling with improved typography */
+h4 {
+  font-size: 26px;
+  color: #333333;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Form styling with more space between elements */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between form fields */
+}
+
+/* Style for input fields */
+.input-field {
+  padding: 14px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly larger radius */
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fafafa; /* Subtle background color */
+}
+
+/* Input field focus effect */
+.input-field:focus {
+  border-color: #4caf50;
+  background-color: #eaf9e5; /* Light green background on focus */
+}
+
+/* Button style with modern hover effects */
+.signup-button {
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.signup-button:active {
+  transform: translateY(0); /* Button press effect */
+}
+
+/* Login text and link style */
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+/* Add a smooth transition to the login link */
+.login-link:focus {
+  outline: none;
+}

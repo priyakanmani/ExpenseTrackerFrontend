@@ -1,0 +1,73 @@
+/* Container styling */
+.line-chart-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    background-image: url('https://img.pikbest.com/wp/202346/growth-graph-digital-income-chart-3d-rendering-of-an-expanding-line_9728567.jpg!w700wp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Ensures text is visible on the image */
+    backdrop-filter: blur(5px); /* Adds a subtle blur for better readability */
+    
+}
+
+  
+  /* Heading styling */
+  .line-chart-container h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fdfcfc;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #f9f7f7;
+  }
+  
+  /* Dropdown styling */
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Add hover effect for the select elements */
+  select:hover {
+    border-color: #007bff;
+  }
+  
+  /* Layout for Year and Month selection */
+  .select-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+
+   /* Line chart container styling */
+#line-chart {
+    width: 80%; /* You can adjust the width as per your needs */
+    height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+
+}

@@ -1,0 +1,46 @@
+/* Container for the Expense Chart */
+#bar-chart {
+    width: 100%; /* Ensures chart takes full width */
+    max-width: 800px; /* Restricts maximum width */
+    margin: 20px auto; /* Centers the chart with top and bottom spacing */
+    padding: 15px; /* Adds padding around the chart */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centers content */
+}
+
+/* Page heading styling */
+h1 {
+    text-align: center; /* Centers the heading */
+    font-size: 2.5rem; /* Larger font size */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+/* Subheading styling */
+h2 {
+    text-align: center; /* Centers the subheading */
+    font-size: 1.8rem; /* Slightly smaller than the main heading */
+    color: #fffafa; /* Medium gray for subtlety */
+    margin-top: 10px; /* Space above */
+    margin-bottom: 15px; /* Space below */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #bar-chart {
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce subheading size */
+    }
+}

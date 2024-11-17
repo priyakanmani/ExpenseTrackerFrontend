@@ -1,0 +1,110 @@
+/* Home.css */
+
+/* General home page styling */
+/* General home page styling */
+.home-page {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;     /* Centers content vertically */
+  background-image: url('https://en.idei.club/uploads/posts/2023-06/1686316617_en-idei-club-p-home-investment-dizain-krasivo-1.jpg'); /* Add background image */
+  background-size: cover;  /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  font-family: 'Roboto', sans-serif; /* Apply the font */
+  color: white; /* Optional: Make text more visible depending on your background */
+  text-align: center; /* Centers text content */
+}
+
+/* Card Styling */
+.card {
+  width: 380px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Rounded corners */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on card */
+.card:hover {
+  transform: translateY(-10px); /* Subtle upward movement */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Profile container for the image and name */
+.profile-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image styling */
+.profile-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #0072ff; /* Blue border around the profile icon */
+}
+
+/* Profile name styling */
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/* Description below the profile */
+.description {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+/* Button container styling */
+.button-container {
+  margin-top: 20px;
+}
+
+/* Login button styling */
+.login-button {
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the login button */
+.login-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Active button effect */
+.login-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect for accessibility */
+.login-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(76, 175, 80, 0.5);
+}
